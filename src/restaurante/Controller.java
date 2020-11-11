@@ -9,10 +9,10 @@ import javafx.scene.control.TextField;
 public class Controller {
 
     @FXML
-    private TextField textField;
+    private TextField txtField;
 
     @FXML
-    private Button submitbtn;
+    private Button submitBtn;
 
     @FXML
     private Label display;
@@ -22,4 +22,6 @@ public class Controller {
     {
         display.setText(txtField.getText());
     }
+
+    
 }

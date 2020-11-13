@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 
 public class Controller {
 
+    //Identificação dos controles 
     @FXML
     private TextField txtField;
 
@@ -17,8 +18,9 @@ public class Controller {
     @FXML
     private Label display;
 
+    //Criação dos eventos
     @FXML
-    void onSubmitBtnClick(ActionEvent event)
+    private void onSubmitBtnClick(ActionEvent event)
     {
         display.setText(txtField.getText());
     }

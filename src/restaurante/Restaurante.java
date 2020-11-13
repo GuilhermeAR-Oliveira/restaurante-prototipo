@@ -13,18 +13,23 @@ import javafx.stage.Stage;
 
 public class Restaurante extends Application
 {
-    public static void main(String[] args) throws Exception 
+    @Override
+    public void start(Stage stage) throws Exception
+    {
+        //Herda os recursos da aplicação
+        Parent root = FXMLLoader.load(getClass().getResource("SceneBuilder.fxml"));
+
+        Scene scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    //Execução do programa
+    public static void main(String[] args) 
     {
         launch(args);
     }
     
-    @Override
-    public void start(Stage stage) throws Exception
-    {
-        Parent root = FXMLLoader.load(getClass().getResource("SceneBuilder.fxml"));
-
-        stage.setScene(new Scene(root));
-        stage.show();
-    }
 }
 
